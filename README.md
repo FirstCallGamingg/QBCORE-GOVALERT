@@ -44,7 +44,7 @@ Use the command below to send a government alert to all players:
 
 ## Notes
 - This script is intended for staff announcements and city-wide alerts  
-- Changing file or folder names **WILL break the resource**<img width="1536" height="1024" alt="QBCOREGOVALRT" src="https://github.com/user-attachments/assets/14f4bd40-9156-4895-9142-7a6484e7fed5" />
+- Changing file or folder names **WILL break the resource**
 
 
 ## Join Our RP Server
@@ -55,3 +55,4 @@ Discord: [Click Me To Join Our Server](https://discord.gg/aQjvdmHFFy)
 ## Support
 If you encounter any issues, please open an issue on this GitHub repository.
 
+<img width="1536" height="1024" alt="QBCOREGOVALRT" src="https://github.com/user-attachments/assets/42afb43a-4132-4931-8429-9f0140685bdc" />
