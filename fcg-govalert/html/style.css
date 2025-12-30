@@ -1,0 +1,128 @@
+:root {
+  --bg: rgba(0,0,0,0.82);
+  --bg2: rgba(0,0,0,0.92);
+  --accent: #ff2e2e;
+  --accent2: #ffd24d;
+  --text: #f3f3f3;
+  --muted: rgba(255,255,255,0.75);
+  --shadow: 0 18px 50px rgba(0,0,0,0.55);
+  --radius: 14px;
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+  font-family: var(--font);
+}
+
+.hidden { display: none; }
+
+#wrap {
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  transform: translateX(-50%);
+  width: min(980px, 92vw);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(180deg, var(--bg), var(--bg2));
+  animation: slideDown 260ms ease-out;
+  overflow: hidden;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-16px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.left { display: flex; flex-direction: column; gap: 6px; }
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,46,46,0.18);
+  border: 1px solid rgba(255,46,46,0.45);
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.sub {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.right { display: flex; gap: 10px; align-items: center; }
+
+.live {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255,46,46,0.18);
+  border: 1px solid rgba(255,46,46,0.45);
+  font-weight: 800;
+}
+
+.timer {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.body {
+  padding: 18px 16px 16px 16px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+  color: var(--accent2);
+}
+
+.msg {
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 650;
+}
+
+.ticker {
+  border-top: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.tickerText {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 18s linear infinite;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.92);
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
