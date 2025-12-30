@@ -44,7 +44,8 @@ Use the command below to send a government alert to all players:
 
 ## Notes
 - This script is intended for staff announcements and city-wide alerts  
-- Changing file or folder names **WILL break the resource**
+- Changing file or folder names **WILL break the resource**<img width="1536" height="1024" alt="QBCOREGOVALRT" src="https://github.com/user-attachments/assets/14f4bd40-9156-4895-9142-7a6484e7fed5" />
+
 
 ## Join Our RP Server
 If you’d like to join our FiveM roleplay community, check out **Young Hood RP**:
